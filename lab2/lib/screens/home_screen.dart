@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
           ),
           Transform.translate(offset: const Offset(0, -28), child: Padding(padding: EdgeInsets.symmetric(horizontal: gutter), child: LearnedTodayCard(onCourses: () => _openCourses(context)))),
           Padding(padding: EdgeInsets.symmetric(horizontal: gutter), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            LayoutBuilder(builder: (_, box) => SizedBox(height: 126, child: ListView.separated(scrollDirection: Axis.horizontal, itemCount: 3, separatorBuilder: (_, _) => const SizedBox(width: 12), itemBuilder: (_, _) => LearningBanner(width: box.maxWidth * .72))),
+            LayoutBuilder(builder: (_, box) => SizedBox(height: 126, child: ListView.separated(scrollDirection: Axis.horizontal, itemCount: 3, separatorBuilder: (_, _) => const SizedBox(width: 12), itemBuilder: (_, _) => LearningBanner(width: box.maxWidth * .72)))),
             const SizedBox(height: AppSpace.lg),
             const Text('Learning Plan', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
             const SizedBox(height: AppSpace.sm),
