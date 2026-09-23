@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../theme/app_theme.dart';
 
 class SearchCourseField extends StatelessWidget {
   const SearchCourseField({super.key, required this.onChanged});
