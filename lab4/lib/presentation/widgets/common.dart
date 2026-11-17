@@ -50,7 +50,7 @@ class StatusMessage extends StatelessWidget {
   final VoidCallback? onAction;
   @override
   Widget build(BuildContext context) => Center(
-    child: Padding(
+    child: SingleChildScrollView(
       padding: const EdgeInsets.all(24),
       child: Column(
         mainAxisSize: MainAxisSize.min,
